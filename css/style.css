@@ -6,3 +6,8 @@
   }
   .w-text{color: silver;}
   .mycl_test1{color: green;}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
