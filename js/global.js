@@ -1,4 +1,4 @@
-<script>
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("webs-nav");
@@ -11,4 +11,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-</script>

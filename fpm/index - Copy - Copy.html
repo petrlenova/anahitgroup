@@ -1,24 +1,35 @@
 <html lang="en"><head>
-</head>
-<body id="page-top" class="index">
 
-
+    <!-- <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+     <meta name="description" content="">
+     <meta name="author" content="">
+ 
+     <title>Portfolio With Filters</title>-->
+ 
+     
+ 
+ 
+ </head>
+ 
+ <body id="page-top" class="index" style="">
   
     <!-- Bootstrap Core CSS -->
-    <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     
     
     <!-- Custom Fonts -->
 
-    <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
     
 
     <!-- Portfolio CSS -->
-
-    <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/css/portfolio.min.css" rel="stylesheet">
+    <!-- <link href="css/portfolio.min.css" rel="stylesheet">  -->
+    <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/css/portfolio.min.css" rel="stylesheet"/>
 
     <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/css/style.css" rel="stylesheet"/> 
 
@@ -98,13 +109,18 @@ transition: all ease 1.5s;
                                     <li class="my_li" style="display: none;"><a id="" data-filter=".food" class="myCl_a">test</a></li>
                                 </ol>
                                 <ol class="my_ol"><p class="my_clP" style="text-align: center;">Filter By seasons</p>  
-                                   
+                                     <h3 class="section-subheading text-muted">By seasons</h3> 
                                    
                                     <li class="my_li"><a id="myID_a_winter" data-filter=".food" class="myCl_a" onclick="filterSelection('winter','myID_a_winter')">Winter</a></li>
                                     <li class="my_li"><a id="myID_a_summer" data-filter=".food" class="myCl_a"  onclick="filterSelection('summer','myID_a_summer')">Summer</a id="myID_a_winter"></li> 
                                         <li class="my_li"><a id="myID_a_spring" data-filter=".food" class="myCl_a"  onclick="filterSelection('spring','myID_a_spring')">Spring</a id="myID_a_winter"></li>
                                              <li class="my_li"><a id="myID_a_autumn" data-filter=".food" class="myCl_a"  onclick="filterSelection('autumn','myID_a_autumn')">Autumn</a id="myID_a_winter"></li>
- 
+
+                                               
+                               <!--      <li class="my_li"><a data-filter=".food"  onclick="filterSelection('architecture')">Architecture</a></li>
+                                    <li class="my_li"><a data-filter=".fashion"  onclick="filterSelection('fashion')">Fashion</a></li> 
+                                    <li class="my_li"><a data-filter=".land" onclick="filterSelection('land')">Landscape</a></li> 
+                                    <li class="my_li"><a data-filter=".food" onclick="filterSelection('food')">Food</a></li> -->  
                                 </ol>
                                 <ol class="my_ol"><p class="my_clP" style="text-align: center;">Filter By Country</p>  
                                     <li class="my_li"><a id="myID_a_armenia" data-filter=".food" class="myCl_a"  onclick="filterSelection('armenia','myID_a_armenia')">Armenia</a id="myID_a_winter"></li>
@@ -123,7 +139,7 @@ transition: all ease 1.5s;
             </div>
      
             <div class="row gallary-thumbs">
-            
+                  
                 <div class="col-md-4 col-sm-6 portfolio-item food summer armenia">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -133,7 +149,7 @@ transition: all ease 1.5s;
                                 <span class="my_spanprice">50$</span>
                             </div>
                         </div>
-                    
+                         <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/fashion1.jpg?raw=true" class="img-responsive" alt=""> 
                         <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/summer/s_armenia_goris.jpg?raw=true" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
@@ -150,7 +166,7 @@ transition: all ease 1.5s;
                                 <span class="my_spanprice">140$</span>
                             </div>
                         </div>
-                     
+                         <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/fashion1.jpg?raw=true" class="img-responsive" alt=""> 
                         <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/summer/s_armenia_KhorVirap.jpg?raw=true" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
@@ -158,7 +174,7 @@ transition: all ease 1.5s;
                         <p class="text-muted">Summer Armenia Khor Virap</p>
                     </div>
                 </div>  
-             
+                   
 
                 <div class="col-md-4 col-sm-6 portfolio-item food winter armenia">
                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
@@ -168,7 +184,7 @@ transition: all ease 1.5s;
                                 <span class="my_spanprice">450$</span>
                            </div>
                        </div>
-                   
+                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/architecture1.jpg?raw=true" class="img-responsive" alt=""> 
                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_armenia_caxkadzor.jpg?raw=true" class="img-responsive" alt="">
                    </a>
                    <div class="portfolio-caption">
@@ -185,7 +201,7 @@ transition: all ease 1.5s;
                                 <span class="my_spanprice">50$</span>
                            </div>
                        </div>
-                  
+                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/architecture1.jpg?raw=true" class="img-responsive" alt=""> 
                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_korea.jpg?raw=true" class="img-responsive" alt="">
                    </a>
                    <div class="portfolio-caption">
@@ -202,7 +218,7 @@ transition: all ease 1.5s;
                                 <span class="my_spanprice">50$</span>
                            </div>
                        </div>
-                     
+                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/architecture1.jpg?raw=true" class="img-responsive" alt=""> 
                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_armenia_goris.jpg?raw=true" class="img-responsive" alt="">
                    </a>
                    <div class="portfolio-caption">
@@ -219,7 +235,7 @@ transition: all ease 1.5s;
                                 <span class="my_spanprice">50$</span>
                            </div>
                        </div>
-                    
+                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/architecture1.jpg?raw=true" class="img-responsive" alt=""> 
                        <img src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_georgia.jpg?raw=true" class="img-responsive" alt="">
                    </a>
                    <div class="portfolio-caption">
@@ -227,7 +243,7 @@ transition: all ease 1.5s;
                        <p class="text-muted">Winter Georgia</p>
                    </div>
                </div>  
-                
+                  END Winter    
                
                 
 </div>  
@@ -235,9 +251,9 @@ transition: all ease 1.5s;
     </section>
 
    
-
-
- 
+    
+     
+        
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -251,11 +267,11 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Summer Armenia Goris</h2>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/summer/s_armenia_KhorVirap.jpg?raw=true" alt="">
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
-                             
+                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/fashion1.jpg?raw=true" alt=""> 
                                 
                                 
                                 <ul class="list-inline">
@@ -289,7 +305,7 @@ transition: all ease 1.5s;
                                 <h2>Summer Armenia Khor Virap</h2>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/summer/s_armenia_KhorVirap.jpg?raw=true" alt="">
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description </p>
-                              
+                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/architecture1.jpg?raw=true" alt=""> 
                                 
                                 
                                 
@@ -301,7 +317,7 @@ transition: all ease 1.5s;
         </div>
     </div>
 
-
+        
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -315,12 +331,12 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Winter Armenia Caxkadzor</h2>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_armenia_caxkadzor.jpg?raw=true" alt="">
                                 <img class="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_armenia_caxkadzor.jpg?raw=true" alt="">
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
-                           
+                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/land1.jpg?raw=true" alt=""> 
 
                             </div>
                         </div>
@@ -330,7 +346,7 @@ transition: all ease 1.5s;
         </div>
     </div>
 
-  
+     
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -344,11 +360,11 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Winter Korea</h2>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_korea.jpg?raw=true" alt="">
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
-                       
+                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/architecture2.jpg?raw=true" alt=""> 
                                 
                                 
                                 
@@ -360,7 +376,7 @@ transition: all ease 1.5s;
         </div>
     </div>
 
-  
+   
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -374,11 +390,11 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Winter Armenia Goris</h2>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_armenia_goris.jpg?raw=true" alt="">
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
-                            
+                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/fashion2.jpg?raw=true" alt=""> 
                                 
                                 
                                 
@@ -390,7 +406,7 @@ transition: all ease 1.5s;
         </div>
     </div>
 
- 
+      
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -404,11 +420,11 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Winter Georgia</h2>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/winter/w_georgia.jpg?raw=true" alt="">
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
-                             
+                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/food1.jpg?raw=true" alt=""> 
                                 
                                 
                                 
@@ -419,7 +435,7 @@ transition: all ease 1.5s;
             </div>
         </div>
     </div>
-     
+       
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -433,7 +449,7 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Project Name</h2>
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/land2.jpg?raw=true" alt="">
@@ -462,7 +478,7 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Project Name</h2>
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description.</p>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/fashion3.jpg?raw=true" alt="">
@@ -477,7 +493,7 @@ transition: all ease 1.5s;
         </div>
     </div>
 
-   
+     
     <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -491,7 +507,7 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Project Name</h2>
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/food2.jpg?raw=true" alt="">
@@ -505,7 +521,7 @@ transition: all ease 1.5s;
             </div>
         </div>
     </div>
- 
+    
     <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -519,7 +535,7 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                
+                                 Project Details Go Here 
                                 <h2>Test Project Name</h2>
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/food2.jpg?raw=true" alt="">
@@ -533,7 +549,7 @@ transition: all ease 1.5s;
             </div>
         </div>
     </div>
-
+    
     <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -547,7 +563,7 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                             
+                                 Project Details Go Here 
                                 <h2>Test Project Name</h2>
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/food2.jpg?raw=true" alt="">
@@ -575,7 +591,7 @@ transition: all ease 1.5s;
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                            
+                                 Project Details Go Here 
                                 <h2>Test Project Name</h2>
                                 <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
                                 <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/food2.jpg?raw=true" alt="">
@@ -663,15 +679,17 @@ transition: all ease 1.5s;
        }
    
    </script>
-
+ 
     <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/jquery/jquery.min.js"></script>
 
-
+       
     <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/bootstrap/js/bootstrap.min.js"></script>
   
+       
+     <script src="js/filter.min.js"></script> 
+     <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/js/filter.min.js"></script> 
 
-
-    
+      
     <script src="https://unpkg.com/isotope-layout@3.0.3/dist/isotope.pkgd.js"></script>
 
     <style>
@@ -695,6 +713,5 @@ transition: all ease 1.5s;
           }
         }
         </script>
-
 
 </body></html>
