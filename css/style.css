@@ -1,6 +1,6 @@
-.subheader-mock {
+.subheader-mock,.subheader-wrap-outer {
     background-color: blue;
-  }
+  } 
    .footer-wrap {
     background-color: blue;
   }
