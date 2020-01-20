@@ -5,7 +5,7 @@
 
 .gallary ol li,
 .gallary ol li:after {
-	margin-left: 20px
+	margin-left: 5px
 }
 
 body {
@@ -61,7 +61,7 @@ ul {
 
 .gallary ul li {
 	margin-top: 10px;
-	margin-bottom: 50px
+	margin-bottom: 20px
 }
 
 .gallary ol li a {

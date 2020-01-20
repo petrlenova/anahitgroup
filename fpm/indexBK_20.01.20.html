@@ -20,9 +20,7 @@
 
     <!-- Portfolio CSS -->
 
-       <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/css/portfolio.min.css" rel="stylesheet"/>   
-     
-     
+    <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/css/portfolio.min.css" rel="stylesheet"/>
 
     <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/css/style.css" rel="stylesheet"/> 
 
@@ -45,12 +43,10 @@ transition: all ease 1.5s;
 .my_isearch{font-size: 40px;}
 .my_spanprice{font-size: 60px;}
 .webs-main{width: 100% !important;}
-
 .my_ol{
              border: 4px double darkblue; /* Параметры границы */
-             border-radius: 1em;
      /*background: #fc3;  Цвет фона */
-    padding-right: 5px;  /* Поля вокруг текста */
+   padding-right: 20px; /* Поля вокруг текста */
      }
    @supports (-webkit-text-stroke: 1px blue) {
   .section-heading {
@@ -101,24 +97,8 @@ transition: all ease 1.5s;
   color: white;
 }
 
-/**/
-.gallary ol li a {
-    font-size:12px;
 
-}    
-.gallary ol li a,
-.gallary ol li a.active,
-.gallary ol li a:focus,
-.gallary ol li a:hover {
-	border-radius: 50px;
-	 font-size: 12px; 
-	padding-left: 15px;
-	padding-right: 15px;
-	text-decoration: none
-}
-.portfolio-modal{z-index: 1052;}
-
-</style> 
+        </style> 
     <section id="portfolio" class="bg-light-gray">
     <div class="gallary animate-grid">
         <div class="container">
@@ -129,24 +109,25 @@ transition: all ease 1.5s;
                 </div>
             </div>
        
-                <div class="row" style="position: fixed;left: 15px;top: 10em; z-index: 3;max-width: 100px;">
+                <div class="row">
                 <div class="col-xs-12">
                     <div class="categories">
                         <ul>
                             <li>
-                              
-                                <ol class="my_ol">
-                                     <li class="my_li my_li_ALL"><a id="myID_a_ALL" data-filter="*" class="myCl_a active"  onclick="filterSelection('ALL','myID_a_ALL')">All</a></li> 
-                                      <li class="my_li" style="display: none;"><a id="" data-filter=".food" class="myCl_a">test</a></li>
+                                <ol class="my_ol"><p class="my_clP" style="text-align: center;">Clear Filters</p>  
+                                  <li class="my_li my_li_ALL"><a id="myID_a_ALL" data-filter="*" class="myCl_a active"  onclick="filterSelection('ALL','myID_a_ALL')">All TOURS</a></li> 
+                                    <li class="my_li" style="display: none;"><a id="" data-filter=".food" class="myCl_a">test</a></li>
+                                </ol>
+                                <ol class="my_ol"><p class="my_clP" style="text-align: center;">Filter By seasons</p>  
                                    
-                                        <li class="my_li" style="display: none;"><a id="" data-filter=".food" class="myCl_a">test</a></li>
+                                   
                                     <li class="my_li"><a id="myID_a_winter" data-filter=".food" class="myCl_a" onclick="filterSelection('winter','myID_a_winter')">Winter</a></li>
                                     <li class="my_li"><a id="myID_a_summer" data-filter=".food" class="myCl_a"  onclick="filterSelection('summer','myID_a_summer')">Summer</a id="myID_a_winter"></li> 
                                         <li class="my_li"><a id="myID_a_spring" data-filter=".food" class="myCl_a"  onclick="filterSelection('spring','myID_a_spring')">Spring</a id="myID_a_winter"></li>
                                              <li class="my_li"><a id="myID_a_autumn" data-filter=".food" class="myCl_a"  onclick="filterSelection('autumn','myID_a_autumn')">Autumn</a id="myID_a_winter"></li>
  
                                 </ol>
-                               <!--  <ol class="my_ol"><p class="my_clP" style="text-align: center;">Filter By Country</p>  
+                                <ol class="my_ol"><p class="my_clP" style="text-align: center;">Filter By Country</p>  
                                     <li class="my_li"><a id="myID_a_armenia" data-filter=".food" class="myCl_a"  onclick="filterSelection('armenia','myID_a_armenia')">Armenia</a id="myID_a_winter"></li>
                                         <li class="my_li"><a id="myID_a_korea" data-filter=".food" class="myCl_a"  onclick="filterSelection('korea','myID_a_korea')">Korea</a id="myID_a_winter"></li>
                                         <li class="my_li"><a id="myID_a_georgia" data-filter=".food" class="myCl_a"  onclick="filterSelection('georgia','myID_a_georgia')">Georgia</a id="myID_a_winter"></li>
@@ -155,8 +136,8 @@ transition: all ease 1.5s;
                                       <li class="my_li"><a id="myID_a_germany" data-filter=".food" class="myCl_a"  onclick="filterSelection('germany','myID_a_germany')">Germany</a id="myID_a_germany"></li>
                                     
                                  
-                                </ol>  -->
-                            </li style="position: fixed;">
+                                </ol> 
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -268,8 +249,8 @@ transition: all ease 1.5s;
                        <p class="text-muted">Winter Georgia</p>
                    </div>
                </div>  
-
-
+                
+               
                 
 </div>  
         </div>
@@ -630,7 +611,7 @@ transition: all ease 1.5s;
             </div>
         </div>
     </div>
- 
+
     <script>
         function filterSelection(c,my_ID) {
                var x = document.getElementsByClassName(c);
@@ -654,12 +635,7 @@ transition: all ease 1.5s;
                }  
                for(var i=0; i<x.length;i++){
                    x[i].style.display = "block";
-               }
-
-               
-               
-               
-               /* document.getElementsByClassName("myID_a_winter").classList.add("active"); */
+               }/* document.getElementsByClassName("myID_a_winter").classList.add("active"); */
    /*  for(var i=0; i<x.length;i++){
     if (x[i].style.display === "none") {
     
