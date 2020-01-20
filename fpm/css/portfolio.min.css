@@ -65,9 +65,9 @@ ul {
 }
 
 .gallary ol li a {
-	color: #00c9ff;
+	color: #1508d6;
 	border-width: 1px;
-	border-color: #00c9ff;
+	border-color: #0a0000de;
 	border-style: solid;
 	font-weight: 500
 }
@@ -75,15 +75,15 @@ ul {
 .gallary ol li a.active {
 	font-weight: 700;
 	font-weight: 500;
-	background-color: #00c9ff;
-	color: #fff
+	background-color: #1eff00;
+	color: rgb(19, 2, 2)
 }
 
 .gallary ol li a:focus,
 .gallary ol li a:hover {
 	font-weight: 500;
-	background-color: #00c9ff;
-	color: #fff
+	background-color: #f7066aec;
+	color: rgb(8, 1, 1)
 }
 
 @media (max-width:767px) {
