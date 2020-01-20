@@ -53,7 +53,7 @@ ul {
 .gallary ol li a:focus,
 .gallary ol li a:hover {
 	border-radius: 50px;
-	font-size: 25px;
+	/* font-size: 25px; */
 	padding-left: 15px;
 	padding-right: 15px;
 	text-decoration: none
