@@ -7,11 +7,12 @@
 
   
     <!-- Bootstrap Core CSS -->
+    
     <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     
     
     <!-- Custom Fonts -->
-
+    
     <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css"/>
@@ -27,7 +28,7 @@
     <link href="https://gitcdn.link/repo/petrlenova/anahitgroup/master/css/style.css" rel="stylesheet"/> 
 
      <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/js/global.js"></script> 
-   
+     <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/alltours/day_data.js" type="text/javascript"></script>
 
 
     <style>
@@ -43,7 +44,8 @@ transition: all ease 1.5s;
 -moz-transition: all ease 1.5s;
 }
 .my_isearch{font-size: 40px;}
-.my_spanprice{font-size: 60px;}
+.my_spanprice{font-size: 30px;}
+.my_spanprice1{font-size: 12px;}
 .webs-main{width: 100% !important;}
 
 .my_ol{
@@ -116,8 +118,15 @@ transition: all ease 1.5s;
 	padding-right: 15px;
 	text-decoration: none
 }
+.gallary ol li a.active1{
+    border-radius: 50px;
+	 font-size: 12px; 
+	padding-left: 15px;
+	padding-right: 15px;
+	text-decoration: none 
+}
 .portfolio-modal{z-index: 1052;}
-
+.my_li1{width: 120px;}
 </style> 
     <section id="portfolio" class="bg-light-gray"  style="background-color: white">
     <div class="gallary animate-grid">
@@ -128,7 +137,30 @@ transition: all ease 1.5s;
                     <h3 class="section-subheading text-muted">In this section you can filter and choose the most suitable tour for you.</h3>
                 </div>
             </div>
-       
+       <!-- TEST -->
+      <div class="row" id="id_POPAP" style="position: fixed;left: 15px;bottom: 0em; z-index: 3000;max-width: 100px; display: none;">
+        <div class="col-xs-12">
+            <div class="categories">
+                <ul>
+                    <li>
+                      
+                        <ol class="my_ol">
+                            <li class="my_li my_li1"><a id="myID_a_day1" data-filter="*" class="myCl_a1" onclick="filterSelectionPopup(1, 0,'myID_a_day1')" style="">Day 1</a></li> 
+                             <li class="my_li my_li1"><a id="myID_a_day2" data-filter=".food" class="myCl_a1"  onclick="filterSelectionPopup(2,0,'myID_a_day2')">Day 2</a></li>
+                            <li class="my_li my_li1"><a id="myID_a_day3" data-filter=".food" class="myCl_a1"  onclick="filterSelectionPopup(3,0,'myID_a_day3')">Day 3</a></li> 
+                            <li class="my_li my_li1"><a id="myID_a_day4" data-filter=".food" class="myCl_a1"  onclick="filterSelectionPopup(4,0,'myID_a_day4')">Day 4</a></li>
+                            <li class="my_li my_li1"><a id="myID_a_day5" data-filter=".food" class="myCl_a1"  onclick="filterSelectionPopup(5,0,'myID_a_day5')">Day 5</a></li>  
+                            <li class="my_li my_li1"><a id="myID_a_day6" data-filter=".food" class="myCl_a1"  onclick="filterSelectionPopup(6,0,'myID_a_day6')">Day 6</a></li>  
+                            <li class="my_li my_li1"><a id="myID_a_day7" data-filter=".food" class="myCl_a1"  onclick="filterSelectionPopup(7,0,'myID_a_day7')">Day 7</a></li> 
+
+                        </ol>
+
+                    </li style="position: fixed;">
+                </ul>
+            </div>
+        </div>
+    </div>
+      <!--  END TEST -->
                 <div class="row" style="position: fixed;left: 15px;bottom: 0em; z-index: 3;max-width: 100px;">
                 <div class="col-xs-12">
                     <div class="categories">
@@ -141,16 +173,16 @@ transition: all ease 1.5s;
                                    
                                         <li class="my_li" style="display: none;"><a id="" data-filter=".food" class="myCl_a">test</a></li>
                                     <li class="my_li"><a id="myID_a_winter" data-filter=".food" class="myCl_a" onclick="filterSelection('winter','myID_a_winter')">Winter</a></li>
-                                    <li class="my_li"><a id="myID_a_summer" data-filter=".food" class="myCl_a"  onclick="filterSelection('summer','myID_a_summer')">Summer</a id="myID_a_winter"></li> 
-                                        <li class="my_li"><a id="myID_a_spring" data-filter=".food" class="myCl_a"  onclick="filterSelection('spring','myID_a_spring')">Spring</a id="myID_a_winter"></li>
-                                             <li class="my_li"><a id="myID_a_autumn" data-filter=".food" class="myCl_a"  onclick="filterSelection('autumn','myID_a_autumn')">Autumn</a id="myID_a_winter"></li>
+                                    <li class="my_li"><a id="myID_a_summer" data-filter=".food" class="myCl_a"  onclick="filterSelection('summer','myID_a_summer')">Summer</a></li> 
+                                        <li class="my_li"><a id="myID_a_spring" data-filter=".food" class="myCl_a"  onclick="filterSelection('spring','myID_a_spring')">Spring</a></li>
+                                             <li class="my_li"><a id="myID_a_autumn" data-filter=".food" class="myCl_a"  onclick="filterSelection('autumn','myID_a_autumn')">Autumn</a></li>
  
                                 </ol>
                                <!--  <ol class="my_ol"><p class="my_clP" style="text-align: center;">Filter By Country</p>  
-                                    <li class="my_li"><a id="myID_a_armenia" data-filter=".food" class="myCl_a"  onclick="filterSelection('armenia','myID_a_armenia')">Armenia</a id="myID_a_winter"></li>
-                                        <li class="my_li"><a id="myID_a_korea" data-filter=".food" class="myCl_a"  onclick="filterSelection('korea','myID_a_korea')">Korea</a id="myID_a_winter"></li>
-                                        <li class="my_li"><a id="myID_a_georgia" data-filter=".food" class="myCl_a"  onclick="filterSelection('georgia','myID_a_georgia')">Georgia</a id="myID_a_winter"></li>
-                                         <li class="my_li"><a id="myID_a_russia" data-filter=".food" class="myCl_a"  onclick="filterSelection('russia','myID_a_russia')">Russia</a id="myID_a_winter"></li>
+                                    <li class="my_li"><a id="myID_a_armenia" data-filter=".food" class="myCl_a"  onclick="filterSelection('armenia','myID_a_armenia')">Armenia</a></li>
+                                        <li class="my_li"><a id="myID_a_korea" data-filter=".food" class="myCl_a"  onclick="filterSelection('korea','myID_a_korea')">Korea</a></li>
+                                        <li class="my_li"><a id="myID_a_georgia" data-filter=".food" class="myCl_a"  onclick="filterSelection('georgia','myID_a_georgia')">Georgia</a></li>
+                                         <li class="my_li"><a id="myID_a_russia" data-filter=".food" class="myCl_a"  onclick="filterSelection('russia','myID_a_russia')">Russia</a></li>
                                          <li class="my_li"><a id="myID_a_usa" data-filter=".food" class="myCl_a"  onclick="filterSelection('usa','myID_a_usa')">USA</a id="myID_a_usa"></li>
                                       <li class="my_li"><a id="myID_a_germany" data-filter=".food" class="myCl_a"  onclick="filterSelection('germany','myID_a_germany')">Germany</a id="myID_a_germany"></li>
                                     
@@ -161,11 +193,30 @@ transition: all ease 1.5s;
                     </div>
                 </div>
             </div>
-     
-            <div class="row gallary-thumbs" style="min-height: 800px;">
-            
+  
+           <!--  <div class="row gallary-thumbs" style="min-height: 800px;" onclick="showpopfilter(1)"> -->
+            <div class="row gallary-thumbs" style="min-height: 800px;" onclick="filterSelectionPopup(0, 0)">
+               <div class="col-md-4 col-sm-6 portfolio-item food summer armenia" >
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                
+                                <i class="my_isearch fa fa-search-plus"></i><br>
+                                <span class="my_spanprice">8Day / 7Night</span>
+                                <span class="my_spanprice1">Yerevan/Tsaghkadzor/Sevan/Garni/Geghard/Yerevan</span>
+                            </div>
+                        </div>
+                   
+                      <img src="img/summer/YerevanTsaghkadzorSevanGarniGeghardYerevan/2.jpg?raw=true" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4 id="id_testh4">Summer</h4>
+                        <p class="text-muted">Tour in Armenia</p>
+                    </div>
+                    
+                </div> 
                 <div class="col-md-4 col-sm-6 portfolio-item food summer armenia">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 
@@ -184,7 +235,7 @@ transition: all ease 1.5s;
                 </div>  
                  
                  <div class="col-md-4 col-sm-6 portfolio-item food summer armenia">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="my_isearch fa fa-search-plus"></i><br>
@@ -202,7 +253,7 @@ transition: all ease 1.5s;
              
 
                 <div class="col-md-4 col-sm-6 portfolio-item food winter armenia">
-                   <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                   <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                        <div class="portfolio-hover">
                            <div class="portfolio-hover-content">
                                <i class="my_isearch fa fa-search-plus"></i><br>
@@ -219,7 +270,7 @@ transition: all ease 1.5s;
                </div>  
                 
                 <div class="col-md-4 col-sm-6 portfolio-item food winter korea">
-                   <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                   <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                        <div class="portfolio-hover">
                            <div class="portfolio-hover-content">
                                <i class="my_isearch fa fa-search-plus"></i><br>
@@ -236,7 +287,7 @@ transition: all ease 1.5s;
                </div>  
                 
                 <div class="col-md-4 col-sm-6 portfolio-item food winter armenia">
-                   <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                   <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                        <div class="portfolio-hover">
                            <div class="portfolio-hover-content">
                                <i class="my_isearch fa fa-search-plus"></i><br>
@@ -253,7 +304,7 @@ transition: all ease 1.5s;
                </div>  
                 
                 <div class="col-md-4 col-sm-6 portfolio-item food winter georgia">
-                   <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                   <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                        <div class="portfolio-hover">
                            <div class="portfolio-hover-content">
                                <i class="my_isearch fa fa-search-plus"></i><br>
@@ -460,30 +511,55 @@ transition: all ease 1.5s;
             </div>
         </div>
     </div>
-     
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <style>
+        img.sticky {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          width: 200px;
+        }
+        </style>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;"onkeyup="myFunction1(event)">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
+                <div class="close-modal" data-dismiss="modal" onclick="showpopfilter(0)"">
                     <div class="lr">
                         <div class="rl">
                         </div>
                     </div>
                 </div>
+
                 <div class="container">
+                    
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description Tour Description</p>
-                                <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/land2.jpg?raw=true" alt=""> <button class="btn info" onclick="myFunctGoContactUs()">Buy Tour</button>
+                                <h2 id="my_id_pop_h2_name"></h2>
+                                 <img id="my_id_pop_img" class="img-responsive img-centered" src="e" alt=""> <button class="btn info" onclick="myFunctGoContactUs()">Buy Tour</button>
+                                <p id="" class="item-intro text-muted">
+                                    </p> 
+                                    
+                                    <h3 id="my_id_pop_h3_price"></h3>
+                                    <h4 id="my_id_pop_h3_daycount"></h3>
+                                    <h5 id="my_id_pop_h3_weather"></h3>
+                                   
+                                   <!--  <img class="sticky" src="" alt="Avatar"> -->
+                                   
+                                   
+                                    
+                                    <p id="my_id_pop_p_description"></p>
+
+
                                 
                                 
                                 
                             </div>
                         </div>
                     </div>
+               
+
+                
                 </div>
             </div>
         </div>
@@ -630,7 +706,57 @@ transition: all ease 1.5s;
             </div>
         </div>
     </div>
- 
+ <script>  
+  /*var x = document.getElementById("portfolioModal7");
+ var y = document.getElementById("id_POPAP");
+  if (window.getComputedStyle(x).display === "none") {
+    y.style.display = "none";
+  }else alert("dwqdwq");
+  document.getElementById("myBtn").addEventListener("click", displayDate); */
+  function myFunction1(event){var x = event.which || event.keyCode;
+        if(x==27){document.getElementById("id_POPAP").style.display="none";  }
+  }
+     function showpopfilter(show){
+              if(show)   document.getElementById("id_POPAP").style.display="block";
+            else document.getElementById("id_POPAP").style.display="none";  
+                /* For class active */
+  
+    var z = document.getElementsByClassName("myCl_a1");
+                for(var i=0; i<z.length;i++){
+                   z[i].classList.remove("active1");
+               }   
+                 
+  /*  END For class active */
+     } 
+  function filterSelectionPopup(day, tourindex, a_dayID) {
+/*  FIRST TIME */
+        if(day==0){showpopfilter(1);
+            document.getElementById("my_id_pop_h2_name").innerHTML = alltours[tourindex]['name'];
+
+             document.getElementById("my_id_pop_img").src = alltours[tourindex]['imglink'];
+            document.getElementById("my_id_pop_h3_price").innerHTML = alltours[tourindex]['price'];
+            document.getElementById("my_id_pop_h3_daycount").innerHTML = alltours[tourindex]['daycount'];
+            document.getElementById("my_id_pop_h3_weather").innerHTML = alltours[tourindex]['weather']; 
+            document.getElementById("my_id_pop_p_description").innerHTML="To read what awaits you every day on the days of the tour, please click on the filter on the left";
+            document.getElementById("my_id_pop_p_description").style.color = "red";
+            return;
+        }/* END FIRST TIME */
+        document.getElementById("my_id_pop_h2_name").innerHTML = alltours[tourindex]['days'][day]['title']+"<br>"+day+" day";
+       document.getElementById("my_id_pop_h3_daycount").innerHTML = alltours[tourindex]['daycount'];
+        document.getElementById("my_id_pop_p_description").innerHTML = alltours[tourindex]['days'][day]['description']; 
+        document.getElementById("my_id_pop_img").src = alltours[tourindex]['days'][day]['src1']; 
+
+    /* For class active */
+  
+    var z = document.getElementsByClassName("myCl_a1");
+                for(var i=0; i<z.length;i++){
+                   z[i].classList.remove("active1");
+               }   
+                 document.getElementById(a_dayID).classList.add("active1");  
+  /*  END For class active */
+
+  }
+ </script>
     <script>
         function filterSelection(c,my_ID) {
                var x = document.getElementsByClassName(c);
@@ -679,6 +805,7 @@ transition: all ease 1.5s;
     }
     </script>
    <script>
+ 
         function filterSelection1(c) {
    /*         $(".animate-grid .categories .active").removeClass("active");c=".animate-grid .gallary-thumbs .portfolio-item"+" ."+c; */
    
@@ -745,6 +872,5 @@ transition: all ease 1.5s;
         </script>
 
 -->
-    
- 
+
 </body></html>

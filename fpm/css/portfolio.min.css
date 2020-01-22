@@ -61,7 +61,7 @@ ul {
 
 .gallary ul li {
 	margin-top: 10px;
-	margin-bottom: 20px
+	margin-bottom: 20px;
 }
 
 .gallary ol li a {
@@ -78,7 +78,12 @@ ul {
 	background-color: #1eff00;
 	color: rgb(19, 2, 2)
 }
-
+.gallary ol li a.active1 {
+	font-weight: 700;
+	font-weight: bold;
+	background-color: #1eff00;
+	color: rgb(19, 2, 2)
+}
 .gallary ol li a:focus,
 .gallary ol li a:hover {
 	 font-weight: bold; 
