@@ -3,7 +3,7 @@ var alltours = {
     0: {imglink: "https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/summer/YerevanTsaghkadzorSevanGarniGeghardYerevan/2.jpg",
         price: '50$',
         weather: 'Summer',
-        daycount: '7day 8night',
+        daycount: '7 day 8 night',
         name: 'Armenian tour',
         days:{
            1:{
