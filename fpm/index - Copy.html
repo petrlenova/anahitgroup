@@ -3,6 +3,7 @@
 <body id="page-top" class="index">
 
 
+     
 
   
  
@@ -28,9 +29,9 @@
 
      <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/js/global.js"></script> 
 
-     <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/alltours/day_data.js" type="text/javascript"></script> 
+     <script src="https://gitcdn.link/repo/petrlenova/anahitgroup/master/fpm/alltours/day_data.js" type="text/javascript"></script>
 
-   
+
     <style>
         .my_li {cursor: pointer;}
         #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -127,46 +128,7 @@ transition: all ease 1.5s;
 }
 .portfolio-modal{z-index: 1052;}
 .my_li1{width: 120px;}
-.modal-backdrop {
-display: none;
-}
-
-.modal-backdrop.fade {
-display: none;
-}
-
-.modal-backdrop.in {
-display: none;
-}
-#id_POPAP{opacity: 0.7;transition-duration: 1.5s;}
-#id_POPAP:hover{opacity: 1;}
-#id_Seasons{opacity: 0.7;transition-duration: 1.5s;}
-#id_Seasons:hover{opacity: 1;}
-
-      #google_translate_element{
-
-    position: -webkit-sticky;
-  position: fixed;
-  top: 0;;right: 10em; z-index: 0;
-}
-#google_translate_element select {background-color: DodgerBlue;font-size: 16px;border-width: 6px;color: chartreuse;}
-#google_translate_element div {
-  
-}
-      #google_translate_element span {}
 </style> 
- <div id="google_translate_element" class=""></div>  
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'ru'
-      }, 'google_translate_element');
-    }
-    </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
-
-
-
     <section id="portfolio" class="bg-light-gray"  style="background-color: white">
     <div class="gallary animate-grid">
         <div class="container">
@@ -177,7 +139,7 @@ display: none;
                 </div>
             </div>
   
-       <div class="row" id="id_POPAP" style="position: fixed;left: 15px;bottom: 0em; z-index: 3000;max-width: 100px; display: none;">
+      <div class="row" id="id_POPAP" style="position: fixed;left: 15px;bottom: 0em; z-index: 2147483638;max-width: 100px; display: none;">
         <div class="col-xs-12">
             <div class="categories">
                 <ul>
@@ -198,9 +160,9 @@ display: none;
                 </ul>
             </div>
         </div>
-    </div> 
+    </div>
 
-                <div class="row" id="id_Seasons" style="position: fixed;left: 15px;bottom: 0em; z-index: 3;max-width: 100px;">
+                <div class="row" style="position: fixed;left: 15px;bottom: 0em; z-index: 3;max-width: 100px;">
                 <div class="col-xs-12">
                     <div class="categories">
                         <ul>
@@ -224,13 +186,7 @@ display: none;
                 </div>
             </div>
   
-            <script>
-                document.getElementById("portfolioModal7").addEventListener("click", displayDate);
-                
-                function displayDate() {
-                 alert("i");
-                }
-                </script>
+         
             <div class="row gallary-thumbs" style="min-height: 800px;" onclick="filterSelectionPopup(0, 0)">
                <div class="col-md-4 col-sm-6 portfolio-item food summer armenia" >
                     <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
@@ -742,45 +698,14 @@ display: none;
             </div>
         </div>
     </div>
-    <script>
-     document.getElementById("portfolio").addEventListener("click", myFunctionportclick);
-        
-        function myFunctionportclick() {
-          
-        /*  var x = document.getElementById("portfolioModal7");
-          if (window.getComputedStyle(x).display === "block") {alert("block");
-            document.getElementById("id_POPAP").style.display="block";
-          }else {alert("none");document.getElementById("id_POPAP").style.display="none";}  */
-            
-        }
-    </script>
-    <script>
-       
-        document.getElementById("portfolioModal7").addEventListener("click", myFunctionportclick);
-        
-        function myFunctionportclick() {
-           
-            setTimeout(function(){ var x = document.getElementById("portfolioModal7");
-          if (window.getComputedStyle(x).display === "block") {
-            document.getElementById("id_POPAP").style.display="block";
-          }else {document.getElementById("id_POPAP").style.display="none";}  }, 1000);
-        /*  var x = document.getElementById("portfolioModal7");
-          if (window.getComputedStyle(x).display === "block") {alert("block");
-            document.getElementById("id_POPAP").style.display="block";
-          }else {alert("none");document.getElementById("id_POPAP").style.display="none";}  */
-            
-        }
-
-        </script>
-
  <script>  
 
   function myFunction1(event){var x = event.which || event.keyCode;
         if(x==27){document.getElementById("id_POPAP").style.display="none";  }
   }
      function showpopfilter(show){
-                if(show)   document.getElementById("id_POPAP").style.display="block";
-            else document.getElementById("id_POPAP").style.display="none";   
+              if(show)   document.getElementById("id_POPAP").style.display="block";
+            else document.getElementById("id_POPAP").style.display="none";  
                 /* For class active */
   
     var z = document.getElementsByClassName("myCl_a1");
@@ -801,7 +726,6 @@ display: none;
             document.getElementById("my_id_pop_h3_weather").innerHTML = alltours[tourindex]['weather']; 
             document.getElementById("my_id_pop_p_description").innerHTML="To read what awaits you every day on the days of the tour, please click on the filter on the left";
             document.getElementById("my_id_pop_p_description").style.color = "red";
-            showpopfilter(1);
             return;
         }/* END FIRST TIME */
         document.getElementById("my_id_pop_h2_name").innerHTML = alltours[tourindex]['days'][day]['title']+"<br>"+day+" day";
@@ -820,7 +744,6 @@ display: none;
 
   }
  </script>
-
     <script>
         function filterSelection(c,my_ID) {
                var x = document.getElementsByClassName(c);

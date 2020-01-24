@@ -1,6 +1,8 @@
 var alltours = {
 
-    0: {imglink: "https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/summer/YerevanTsaghkadzorSevanGarniGeghardYerevan/2.jpg",
+    0: {imglink: "https://raw.githubusercontent.com/petrlenova/anahitgroup/master/fpm/img/summer/YerevanTsaghkadzorSevanGarniGeghardYerevan/road.jpg",
+   
+   
         price: '50$',
         weather: 'Summer',
         daycount: '7 day 8 night',
