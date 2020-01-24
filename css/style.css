@@ -11,3 +11,16 @@
     top: 0;
     width: 100%;
     }
+     
+#google_translate_element{
+
+    position: -webkit-sticky;
+  position: fixed;
+  top: 0;;right: 10em; z-index: 0;
+}
+#google_translate_element select {background-color: DodgerBlue;font-size: 16px;border-width: 6px;color: chartreuse;}
+#google_translate_element div {
+  
+}
+#google_translate_element span {}
+ 
